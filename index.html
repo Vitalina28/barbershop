@@ -3,49 +3,68 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BarberShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
-        <a href="">
-            <img src="./img/logo.svg" alt="лого сайта">
-        </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about">О нас</a>
+    <header class="header">
+        <nav class="navigation">
+            <a class="logo link" href="">
+                <img class="logo-img" src="./img/logo.svg" alt="лого сайта">
+            </a>
+            <ul class=" nav-list-list">
+                <li class="nav-link-iteam">
+                    <a class="nav-list-link link" href="#about">О нас</a>
                 </li>
                 <li>
-                    <a href="#prices">Услуги и цены</a>
+                    <a class="nav-list-link link" href="#prices">Услуги и цены</a>
                 </li>
-                <li>
-                    <a href="#masters">Мастера</a>
+                <li class="nav-link-iteam">
+                    <a class="nav-list-link link" href="#masters">Мастера</a>
                 </li>
-                <li>
-                    <a href="#contacts">Контакты</a>
+                <li class="nav-link-iteam">
+                    <a class="nav-list-link link" href="#contacts">Контакты</a>
                 </li>
             </ul>
         </nav>
-        <a href="tel:+380441111111">+38 044 111 11 11</a>
-        <button type="button">онлайн-запись</button>
+        <a class="contact-number link" href="tel:+380441111111">+38 044 111 11 11</a>
+        <button class="model-btn" type="button">онлайн-запись</button>
     </header>
     <main>
-        <section>
-            <ul>
-                <li><a href="" target="_blank">Instagram</a></li>
-                <li><a href="" target="_blank" rel="noopener noreferrer">Youtube</a></li>
-            </ul>
+
+        <!---HERO--->
+
+        <section class="hero">
+            <div class="hero-left-site">
+                <ul class="social-links-list list">
+                    <li class="social-links-link-iteam">
+                        <a class="social-links-link-list link" href="" target="_blank">Instagram</a>
+                    </li>
+                    <li class="social-links-link-iteam">
+                        <a class="social-links-link-list link" href="" target="_blank"
+                            rel="noopener noreferrer">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hero-right-site">
+                <p class="overtitle" lang="en">A hair salon for men in Kyiv</p>
+                <h1 class="main-title">BarberShop</h1>
+                <p class="discription">Мы эксперты в модных мужских стрижках. <br> Работаем быстро, осторожно и со
+                    вкусом.</p>
+            </div>
         </section>
-        <section>
-            <p lang="en">A hair salon for men in Kyiv</p>
-            <h1>BarberShop</h1>
-            <p>Мы эксперты в модных мужских стрижках. <br> Работаем быстро, осторожно и со вкусом.</p>
-        </section>
+
+        <!--ABOUT-->
+
         <section id="about">
-            <ul>
+            <ul class="list">
                 <li>
                     <img src="./img/about-img-1.jpg" alt="барбер бреет бороду" width="270" height="445">
                 </li>
@@ -67,7 +86,7 @@
         <section id="prices">
             <p>Проведи время в компании лучшик мастеров</p>
             <h2>Услуги и цены</h2>
-            <ul>
+            <ul class="list">
                 <li>
                     <p>Мужская стрижка</p>
                     <p>от 300 грн.</p>
@@ -85,7 +104,7 @@
                     <p>от 200 грн.</p>
                 </li>
             </ul>
-            <ul>
+            <ul class="list">
                 <li>
                     <p>Cтрижка у стажера</p>
                     <p>от 50 грн.</p>
@@ -106,7 +125,7 @@
             <button type="button">онлайн-запись</button>
         </section>
         <section>
-            <ul>
+            <ul class="list">
                 <li>
                     <span>600</span>
                     <p>Довольных клиентов в день</p>
@@ -132,7 +151,7 @@
         <section id="masters">
             <p>Для настоящих ценителей атмосферы</p>
             <h2>Наши мастера</h2>
-            <ul>
+            <ul class="list">
                 <li>
                     <img src="./img/master-1.jpg" alt="барбер стрижет клиента" width="370" height="346">
                     <h3 lang="en">John Smith</h3>
@@ -153,7 +172,7 @@
         <section>
             <p>На латинском языке "барба" означает "борода"</p>
             <h2 hidden>Галерея</h2>
-            <ul>
+            <ul class="list">
                 <li>
                     <img src="./img/gallery-img-1.jpg" alt="барбер стрижет клиента" width="270" height="360">
                 </li>
@@ -174,13 +193,13 @@
         <section id="contacts">
             <h2>Контакты</h2>
             <address>
-                <ul>
+                <ul class="list">
                     <li>
-                        <a href="https://goo.gl/maps/s6YfRpMjAbvZjV9S6?coh=178573&entry=tt" target="_blank"
+                        <a class="link" href="https://goo.gl/maps/s6YfRpMjAbvZjV9S6?coh=178573&entry=tt" target="_blank"
                             rel="noopener noreferrer">ул.Васильковая, 7А Киев, 08132</a>
                     </li>
                     <li>
-                        <a href="tel:+380441111111">+38 044 111 11 11</a>
+                        <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
                     </li>
                     <li>
                         <a href="mailto:barbershop@email.com">barbershop@email.com</a>
@@ -193,9 +212,9 @@
     </main>
     <footer>
         <p>&copy; Copyright 2020</p>
-        <ul>
-            <li><a href="" target="_blank">Instagrame</a></li>
-            <li><a href="" target="_blank">Youtube</a></li>
+        <ul class="list">
+            <li><a class="link" href="" target="_blank">Instagrame</a></li>
+            <li><a class="link" href="" target="_blank">Youtube</a></li>
         </ul>
     </footer>
 </body>

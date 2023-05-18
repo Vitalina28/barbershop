@@ -1,0 +1,116 @@
+:root {
+    --primary-font-family: Open Sans, sans-serif;
+    --secondary-font-family: 'Raleway', sans-serif;
+    --primary-taxt-color-theme-dark: #9da4db;
+    --secondary-font-color-theme-dark: #ffffff;
+    --primary-taxt-color-theme-light: #555555;
+    --secondary-font-color-theme-light: #303030;
+    --accent-color: #ff6c00;
+}
+
+body {
+    font-family: var(--primary-font-family);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/*---------START COMPONENTS-----------*/
+.model-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* color: #ffffff; */
+}
+
+.model-btn:hover,
+.model-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-font-color-theme-dark);
+}
+
+.social-links-link-list {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--secondary-font-color-theme-light);
+}
+
+.social-links-link-list:hover,
+.social-links-link-list:focus {
+    color: var(--accent-color);
+}
+
+.overtitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.main-title {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    /* color: #ffffff;*/
+}
+
+.discription {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--primary-taxt-color-theme-dark);
+}
+
+/*---------END COMPONENT
+
+/*-------------START HEADER--------------*/
+
+.nav-list-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    /*  color: #ffffff;  */
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus {
+    color: var(--accent-color);
+}
+
+.contact-number {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    /* color: #ffffff; */
+}
+
+.contact-number:hover,
+.contact-number:focus {
+    color: var(--accent-color);
+}
+
+/*--------------END HEADER---------------*/
+
+/*------------START HERO----------*/
+
+
+/*------------END HERO------------*/

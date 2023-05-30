@@ -1,9 +1,9 @@
 :root {
     --primary-font-family: Open Sans, sans-serif;
     --secondary-font-family: 'Raleway', sans-serif;
-    --primary-taxt-color-theme-dark: #9da4db;
+    --primary-text-color-theme-dark: #9da4db;
     --secondary-font-color-theme-dark: #ffffff;
-    --primary-taxt-color-theme-light: #555555;
+    --primary-text-color-theme-light: #555555;
     --secondary-font-color-theme-light: #303030;
     --accent-color: #ff6c00;
 }
@@ -12,12 +12,44 @@ body {
     font-family: var(--primary-font-family);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+address {
+    font-style: normal;
+}
+
 .list {
     list-style: none;
 }
 
 .link {
     text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*---------START COMPONENTS-----------*/
@@ -75,7 +107,7 @@ body {
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
-    color: var(--primary-taxt-color-theme-dark);
+    color: var(--primary-text-color-theme-dark);
 }
 
 /*---------END COMPONENT

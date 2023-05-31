@@ -17,28 +17,30 @@
 </head>
 
 <body>
-    <header class="header container">
-        <nav class="navigation">
-            <a class="logo link" href="">
-                <img class="logo-img" src="./img/logo.svg" alt="лого сайта">
-            </a>
-            <ul class=" nav-link list">
-                <li class="nav-link-iteam">
-                    <a class="nav-list-link link" href="#about">О нас</a>
-                </li>
-                <li>
-                    <a class="nav-list-link link" href="#prices">Услуги и цены</a>
-                </li>
-                <li class="nav-link-iteam">
-                    <a class="nav-list-link link" href="#masters">Мастера</a>
-                </li>
-                <li class="nav-link-iteam">
-                    <a class="nav-list-link link" href="#contacts">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <a class="contact-number link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="model-btn" type="button">онлайн-запись</button>
+    <header class="header">
+        <div class="container header-container">
+            <nav class="navigation">
+                <a class="logo link" href="">
+                    <img class="logo-img" src="./img/logo.svg" alt="лого сайта">
+                </a>
+                <ul class=" nav-link list">
+                    <li class="nav-link-iteam">
+                        <a class="nav-list-link link" href="#about">О нас</a>
+                    </li>
+                    <li>
+                        <a class="nav-list-link link" href="#prices">Услуги и цены</a>
+                    </li>
+                    <li class="nav-link-iteam">
+                        <a class="nav-list-link link" href="#masters">Мастера</a>
+                    </li>
+                    <li class="nav-link-iteam">
+                        <a class="nav-list-link link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="contact-number link" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="model-btn" type="button">онлайн-запись</button>
+        </div>
     </header>
     <main>
 
@@ -66,7 +68,7 @@
 
         <!--ABOUT-->
 
-        <section class="about container">
+        <section class="about container section">
             <ul class="list">
                 <li>
                     <img src="./img/about-img-1.jpg" alt="барбер бреет бороду" width="270" height="445">
@@ -75,8 +77,8 @@
                     <img src="./img/about-img-2.jpg" alt="барбер бреет затылок" width="270" height="445">
                 </li>
             </ul>
-            <p>О нас</p>
-            <h2>Лучший Барбершоп твоего города</h2>
+            <p class="overtitle">О нас</p>
+            <h2 class="title">Лучший Барбершоп твоего города</h2>
             <p>Если ты хочешь добавить в свой образ больше
                 уверенности – тебе точно к нам.</p>
             <p>Мы команда, которая никогда не останавливается на достигнутом и жаждет
@@ -87,8 +89,8 @@
             <button type="button">онлайн-запись</button>
         </section>
         <section class="prices container">
-            <p>Проведи время в компании лучшик мастеров</p>
-            <h2>Услуги и цены</h2>
+            <p class="overtitle">Проведи время в компании лучшик мастеров</p>
+            <h2 class="title">Услуги и цены</h2>
             <ul class="list">
                 <li>
                     <p>Мужская стрижка</p>
@@ -127,7 +129,7 @@
             </ul>
             <button type="button">онлайн-запись</button>
         </section>
-        <section>
+        <section class="employes-section">
             <ul class="list">
                 <li>
                     <span>600</span>
@@ -146,35 +148,46 @@
                     <p>Подарков постоянным клиентам</p>
                 </li>
             </ul>
-            <p>Старая традиционная школа</p>
-            <h2>Почему приходят именно к нам?</h2>
+            <p class="overtitle">Старая традиционная школа</p>
+            <h2 class="title">Почему приходят именно к нам?</h2>
             <p>О нас говорят только хорошее. Но лучше 1 раз
                 увидеть и прочувствовать, чем 10 раз прочитать.</p>
         </section>
-        <section id="masters">
-            <p>Для настоящих ценителей атмосферы</p>
-            <h2>Наши мастера</h2>
-            <ul class="list">
-                <li>
-                    <img src="./img/master-1.jpg" alt="барбер стрижет клиента" width="370" height="346">
-                    <h3 lang="en">John Smith</h3>
-                    <p lang="en">Extreme Barber</p>
-                </li>
-                <li>
-                    <img src="./img/master-2.jpg" alt="барбер стрижет клиента" width="370" height="346">
-                    <h3 lang="en">Michele Doe</h3>
-                    <p lang="en">Extreme Barber</p>
-                </li>
-                <li>
-                    <img src="./img/master-3.jpg" alt="барбер стрижет клиента" width="370" height="346">
-                    <h3 lang="en">Alan Black</h3>
-                    <p lang="en">Extreme Barber</p>
-                </li>
-            </ul>
+        <section class="employees-section section">
+            <div class="container">
+                <p class="overtitle overtitle-theme-light">Для настоящих ценителей атмосферы</p>
+                <h2 class="title title-theme-light">Наши мастера</h2>
+                <ul class="employees list">
+                    <li class="employees-card">
+                        <img class="employees-photo" src="./img/master-1.jpg" alt="барбер стрижет клиента" width="370"
+                            height="346">
+                        <div class="employees-content-wrapper">
+                            <h3 class="employees-name" lang="en">John Smith</h3>
+                            <p class="emploess-position" lang="en">Extreme Barber</p>
+                        </div>
+                    </li>
+                    <li class="employees-card">
+                        <img class="employees-photo" src="./img/master-2.jpg" alt="барбер стрижет клиента" width="370"
+                            height="346">
+                        <div class="employees-content-wrapper">
+                            <h3 class="employees-name" lang="en">Michele Doe</h3>
+                            <p class="emploess-position" lang="en">Extreme Barber</p>
+                        </div>
+                    </li>
+                    <li class="employees-card">
+                        <img class="employees-photo" src="./img/master-3.jpg" alt="барбер стрижет клиента" width="370"
+                            height="346">
+                        <div class="employees-content-wrapper">
+                            <h3 class="employees-name" lang="en">Alan Black</h3>
+                            <p class="emploess-position" lang="en">Extreme Barber</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section>
-            <p>На латинском языке "барба" означает "борода"</p>
-            <h2 hidden>Галерея</h2>
+        <section class="section">
+            <p class="overtitle">На латинском языке "барба" означает "борода"</p>
+            <h2 class="title">Галерея</h2>
             <ul class="list">
                 <li>
                     <img src="./img/gallery-img-1.jpg" alt="барбер стрижет клиента" width="270" height="360">
@@ -191,10 +204,10 @@
             </ul>
         </section>
         <section>
-            <h2>Онлайн-запись</h2>
+            <h2 class="title">Онлайн-запись</h2>
         </section>
         <section id="contacts">
-            <h2>Контакты</h2>
+            <h2 class="title">Контакты</h2>
             <address>
                 <ul class="list">
                     <li>
